@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Sample from "./component/sample";
 
 function App() {
+  // const [data, setData] = useState("");
+  // const [value, setValue] = useState("");
+  // const Handdler = () => {
+  //   setValue(data);
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <input type="text" onChange={(event) => setData(event.target.value)} />
+      <button onClick={() => Handdler()}>Click</button>
+      <div>{value}</div> */}
+      <Sample />
     </div>
   );
 }
